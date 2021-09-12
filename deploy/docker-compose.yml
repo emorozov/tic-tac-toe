@@ -1,0 +1,10 @@
+services:
+  tictactoe-api:
+    build:
+      context: .
+      dockerfile: ./deploy/api/Dockerfile
+    ports:
+      - "8000:8000"
+    container_name: tictactoe-api
+    command: bash /app/start-django-uvicorn.sh
+    restart: unless-stopped

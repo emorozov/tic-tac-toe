@@ -1,0 +1,21 @@
+[flake8]
+max-complexity = 10
+import-order-style = pycharm
+
+ignore =
+  ; Missing docstring in public module
+  D100,
+  ; Line break occurred before a binary operator
+  W503,
+  ; Line break occurred after a binary operator
+  W504,
+
+per-file-ignores =
+  ; all init files
+  __init__.py:
+
+exclude =
+  ./.git,
+  ./static,
+  */migrations/*,
+
