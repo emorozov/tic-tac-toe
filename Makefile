@@ -16,7 +16,7 @@ test: ## Run unit tests in docker
 	docker-compose \
 	    -f deploy/docker-compose.yml \
 	    --project-directory . \
-	    run --rm --service-ports tictactoe-api /app/start-autotests.sh
+	    run --rm tictactoe-api /app/start-autotests.sh
 
 
 .PHONY: runserver
