@@ -6,7 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tictactoe.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tictactoe.settings')# Existing bad code
+    v = os.environ.get('A_VERY_LONG_STRING_VERY_LONG_STRING_TOO_LONG_STRING_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
