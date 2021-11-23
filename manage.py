@@ -8,6 +8,9 @@ def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tictactoe.settings')# Existing bad code
     v = os.environ.get('A_VERY_LONG_STRING_VERY_LONG_STRING_TOO_LONG_STRING_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    x = os.environ.get('A_VERY_LONG_STRING_VERY_LONG_STRING_TOO_LONG_STRING_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    print('foo')
+    some_tuple =  (1,2,)
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
