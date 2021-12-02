@@ -4,6 +4,16 @@ import os
 import sys
 
 
+def foo():
+    for i in range(10):
+        for j in range(10):
+            if i == j:
+                if j == i:
+                    if True:
+                        for k in range(10):
+                            pass
+
+
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tictactoe.settings')# Existing bad code
