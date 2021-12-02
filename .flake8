@@ -1,4 +1,5 @@
 [flake8]
+max-line-length = 200
 max-complexity = 10
 import-order-style = pycharm
 
